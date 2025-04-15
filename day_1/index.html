@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAY !</title>
+    <!-- <link rel="stylesheet" href="day1.css"> -->
+</head>
+<style>
+    .text-button{
+        width: 70%;
+    }
+    textarea{
+    border: 3px solid red;
+    background-color: rgba(241, 121, 121, 0.5);
+    width: 70%;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        width: 50vh;
+    }
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 30%;
+    }
+   .inputs input{
+        background-color:rgb(149, 246, 97);
+        border: 1px solid rgb(85, 161, 85);
+        height: 30%;
+        border-radius: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+</style>
+<body>
+    <form>
+        <div class="container">
+        <textarea name="text" class="textarea" id="textarea" cols="30" rows="10"></textarea>
+        <div class="inputs">
+        <input type="button" value="Voice" class="voice"/>
+        <input type="button" value="pause" class="pause" />
+        </div>
+    </div>
+        <input type="text" placeholder="for voice.." class="text-button" />
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
